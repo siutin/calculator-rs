@@ -106,8 +106,8 @@ impl eframe::App for TemplateApp {
 
             ui.heading(&mut self.label);
 
-            ui.add(egui::TextEdit::singleline(&mut format!("{}", self.input)).hint_text("input"));
-            ui.add(egui::TextEdit::singleline(&mut format!("{}", self.accumulator)).hint_text("accumulator"));
+            // ui.add(egui::TextEdit::singleline(&mut format!("{}", self.input)).hint_text("input"));
+            // ui.add(egui::TextEdit::singleline(&mut format!("{}", self.accumulator)).hint_text("accumulator"));
             ui.add(egui::TextEdit::singleline(&mut self.display).hint_text("display"));
             ui.colored_label(egui::Color32::RED,  self.reason.unwrap_or(""));
 
